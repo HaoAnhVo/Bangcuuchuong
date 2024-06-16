@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bang cuu chuong</title>
+    </head>
+    <body>
+        <table id="table" border="1" cellpadding="10"></table>
+        <script>
+            // Bảng cửu chương từ 1 đến 10
+            for (let i = 0; i < 9; i++) {
+                var x = document.getElementById("table").insertRow(i);
+                for (let j = 0; j < 8; j++) {
+                    var y = x.insertCell(j);
+                    y.innerHTML = `${j + 2} * ${i + 1} = ` + (j + 2) * (i + 1);
+                }
+            }
+        </script>
+    </body>
+</html>
